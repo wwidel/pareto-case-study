@@ -1,0 +1,345 @@
+<?xml version='1.0'?>
+<adtree>
+	<node refinement="conjunctive">
+		<label>reconfigure power meter
+via optical port</label>
+		<node refinement="conjunctive">
+			<label>have physical access
+to the power meter</label>
+		</node>
+		<node refinement="disjunctive">
+			<label>reconfigure power meter
+using appropriate
+software/tools</label>
+			<node refinement="conjunctive">
+				<label>reconfigure power meter
+using unauthorized
+software/tools</label>
+				<node refinement="conjunctive">
+					<label>obtain unauthorized
+software/tools</label>
+					<node refinement="conjunctive">
+						<label>find and download
+software
+for hacking
+power meters</label>
+					</node>
+					<node refinement="disjunctive">
+						<label>obtain
+optical probe</label>
+						<node refinement="conjunctive">
+							<label>buy
+optical probe</label>
+						</node>
+						<node refinement="conjunctive">
+							<label>make
+optical probe</label>
+						</node>
+					</node>
+				</node>
+				<node refinement="disjunctive">
+					<label>use optical probe
+to establish connection
+to the meter via
+the optical port</label>
+					<node refinement="disjunctive" switchRole="yes">
+						<label>require authentication
+for establishing
+connection</label>
+						<node refinement="conjunctive" switchRole="yes">
+							<label>authenticate using
+power meter
+credentials</label>
+							<node refinement="disjunctive">
+								<label>obtain
+power meter
+credentials</label>
+								<node refinement="disjunctive">
+									<label>obtain power meter
+credentials by exploiting
+its hardware components</label>
+									<node refinement="conjunctive">
+										<label>extract credentials
+from data dump from
+hardware component</label>
+										<node refinement="conjunctive">
+											<label>extract data
+from
+hardware component</label>
+										</node>
+										<node refinement="conjunctive">
+											<label>locate credentials
+in the
+extracted data</label>
+										</node>
+										<node refinement="conjunctive">
+											<label>extract credentials</label>
+										</node>
+									</node>
+									<node refinement="conjunctive">
+										<label>extract credentials from
+communications
+between hardware components</label>
+										<node refinement="conjunctive">
+											<label>monitor communications
+between hardware components</label>
+										</node>
+										<node refinement="conjunctive">
+											<label>intercept credentials</label>
+										</node>
+									</node>
+								</node>
+								<node refinement="conjunctive">
+									<label>obtain credentials
+using brute force
+attack</label>
+									<node refinement="disjunctive">
+										<label>find and download
+software
+for hacking
+power meters</label>
+									</node>
+									<node refinement="disjunctive">
+										<label>perform
+brute force
+attack</label>
+										<node refinement="disjunctive" switchRole="yes">
+											<label>prevent
+brute force attacks
+from succeeding</label>
+											<node refinement="disjunctive">
+												<label>enforce policy
+of using
+strong passwords</label>
+											</node>
+											<node refinement="disjunctive">
+												<label>limit the number
+of possible invalid
+authentication attempts</label>
+											</node>
+										</node>
+									</node>
+								</node>
+								<node refinement="conjunctive">
+									<label>obtain power meter
+credentials from
+social engineered
+technician</label>
+									<node refinement="conjunctive">
+										<label>identify and select
+technician
+for obtaining
+power meter credentials</label>
+										<node refinement="disjunctive">
+											<label>assemble background on
+employees and
+energy provider</label>
+											<node refinement="disjunctive">
+												<label>acquire information
+from public Internet
+source</label>
+												<node refinement="disjunctive" switchRole="yes">
+													<label>enforce policy
+to minimize
+Internet disclosure</label>
+												</node>
+											</node>
+											<node refinement="disjunctive">
+												<label>acquire information
+from dumpster diving</label>
+												<node refinement="conjunctive" switchRole="yes">
+													<label>enforce policy
+to minimize leakage
+of physical artefacts</label>
+												</node>
+											</node>
+											<node refinement="conjunctive">
+												<label>acquire information
+by infiltrating the
+energy provider</label>
+												<node refinement="conjunctive">
+													<label>get employed
+as intern by the
+energy provider</label>
+													<node refinement="conjunctive" switchRole="yes">
+														<label>enforce policy
+of performing thorough
+background checks
+on employees</label>
+													</node>
+												</node>
+												<node refinement="disjunctive">
+													<label>collect information
+by exchanging
+gossips with
+employees</label>
+												</node>
+											</node>
+										</node>
+										<node refinement="conjunctive">
+											<label>select technician
+for obtaining
+power meter credentials</label>
+										</node>
+									</node>
+									<node refinement="disjunctive">
+										<label>obtain power
+meter credentials
+from selected
+technician</label>
+										<node refinement="conjunctive">
+											<label>bribe technician
+to reveal
+power meter credentials</label>
+										</node>
+										<node refinement="conjunctive">
+											<label>coerce technician
+into revealing
+power meter credentials</label>
+										</node>
+										<node refinement="conjunctive">
+											<label>trick technician
+into revealing
+power meter credentials</label>
+											<node refinement="conjunctive" switchRole="yes">
+												<label>track popular
+social engineering attacks
+and warn personnel</label>
+											</node>
+										</node>
+									</node>
+								</node>
+							</node>
+							<node refinement="disjunctive">
+								<label>provide
+power meter
+credentials</label>
+							</node>
+						</node>
+					</node>
+				</node>
+				<node refinement="conjunctive">
+					<label>reconfigure
+power meter
+using the software</label>
+					<node refinement="conjunctive" switchRole="yes">
+						<label>require authentication
+for introducing changes
+in power consumption
+configuration</label>
+					</node>
+				</node>
+			</node>
+			<node refinement="conjunctive">
+				<label>social engineered technician
+reconfigures power meter
+using authorized
+software/tools</label>
+				<node refinement="conjunctive">
+					<label>social engineer technician
+into reconfiguring
+power meter using
+authorized software/tools</label>
+					<node refinement="conjunctive">
+						<label>identify and select
+technician
+for reconfiguring
+power meter</label>
+						<node refinement="disjunctive">
+							<label>assemble background on
+employees and
+energy provider</label>
+							<node refinement="disjunctive">
+								<label>acquire information
+from public Internet
+source</label>
+								<node refinement="disjunctive" switchRole="yes">
+									<label>enforce policy
+to minimize
+Internet disclosure</label>
+								</node>
+							</node>
+							<node refinement="disjunctive">
+								<label>acquire information
+from dumpster diving</label>
+								<node refinement="conjunctive" switchRole="yes">
+									<label>enforce policy
+to minimize leakage
+of physical artefacts</label>
+								</node>
+							</node>
+							<node refinement="conjunctive">
+								<label>acquire information
+by infiltrating the
+energy provider</label>
+								<node refinement="conjunctive">
+									<label>get employed
+as intern by the
+energy provider</label>
+									<node refinement="conjunctive" switchRole="yes">
+										<label>enforce policy
+of performing thorough
+background checks
+on employees</label>
+									</node>
+								</node>
+								<node refinement="disjunctive">
+									<label>collect information
+by exchanging
+gossips with
+employees</label>
+								</node>
+							</node>
+						</node>
+						<node refinement="conjunctive">
+							<label>select technician
+for reconfiguring
+power meter</label>
+						</node>
+					</node>
+					<node refinement="disjunctive">
+						<label>convince technician
+to reconfigure
+power meter</label>
+						<node refinement="conjunctive">
+							<label>bribe technician
+to reconfigure the
+power meter</label>
+						</node>
+						<node refinement="conjunctive">
+							<label>coerce technician
+into reconfiguring the
+power meter</label>
+						</node>
+					</node>
+				</node>
+				<node refinement="conjunctive">
+					<label>technician reconfigures
+power meter
+using authorized
+software/tools</label>
+				</node>
+			</node>
+			<node refinement="conjunctive">
+				<label>get employed as
+field technician and
+reconfigure power meter</label>
+				<node refinement="conjunctive">
+					<label>get employed as
+field technician</label>
+					<node refinement="conjunctive" switchRole="yes">
+						<label>enforce policy
+of performing thorough
+background checks
+on employees</label>
+					</node>
+				</node>
+				<node refinement="conjunctive">
+					<label>reconfigure power meter
+using authorized
+software/tools</label>
+				</node>
+			</node>
+		</node>
+	</node>
+</adtree>
