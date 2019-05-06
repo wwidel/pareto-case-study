@@ -1,6 +1,6 @@
 Files used for the case study from *Efficient attack-defense trees analysis using Pareto attribute domains*.
 * [*reconfigure_power_meter.xml*](./reconfigure_power_meter.xml) - .xml file storing the case study tree. Can be provided as input to [ADTool](https://satoss.uni.lu/members/piotr/adtool/) for graphical visualization.
-* [*consensus.txt*](./consensus.txt) - the basic assignment of attributes to the basic actions of the opponent.
+* [*metter_all_atributes.txt*](./metter_all_atributes.txt) - the basic assignment of attributes to the basic actions of the opponent.
 * [*study.py*](./study.py) - Python script used for performing the case study.
 
 The following steps lead to reproducing the results.
