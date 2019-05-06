@@ -20,7 +20,7 @@ def prepare():
         node.label = node.label.replace('\n', ' ')
     # create the domain for 1 cost and 4 min/max domains
     pd = ParetoDomain(1, 4)
-    ba = BasicAssignment('consensus.txt')
+    ba = BasicAssignment('metter_all_attributes.txt')
     return T, pd, ba
 
 
@@ -37,29 +37,29 @@ def modify_assignment(basic, tree, scenario=1):
         basic[b] = neutral
 
     # Scenario 2: defender does
-    #   'enforce policy of performing thorough background checks on employees'
+    #   'thorough background check before hiring new employees'
     if scenario == 2:
-        basic['enforce policy of performing thorough background checks on employees'] = absorbing
+        basic['thorough background check before hiring new employees'] = absorbing
 
     # Scenario 3: defender does
-    #   'require authentication for establishing connection'
+    #   'password authentication for establishing connection'
     if scenario == 3:
-        basic['require authentication for establishing connection'] = absorbing
+        basic['password authentication for establishing connection'] = absorbing
 
     # Scenario 4: defender does
     #   'enforce policy of performing thorough background checks on employees'
     #   'require authentication for establishing connection'
     if scenario == 4:
-        basic['enforce policy of performing thorough background checks on employees'] = absorbing
-        basic['require authentication for establishing connection'] = absorbing
+        basic['thorough background check before hiring new employees'] = absorbing
+        basic['password authentication for establishing connection'] = absorbing
 
     # Scenario 5: defender does
-    #   'enforce policy of performing thorough background checks on employees'
-    #   'require authentication for establishing connection'
+    #   'thorough background check before hiring new employees'
+    #   'password authentication for establishing connection'
     #   'limit the number of possible invalid authentication attempts'
     if scenario == 5:
-        basic['enforce policy of performing thorough background checks on employees'] = absorbing
-        basic['require authentication for establishing connection'] = absorbing
+        basic['thorough background check before hiring new employees'] = absorbing
+        basic['password authentication for establishing connection'] = absorbing
         basic['limit the number of possible invalid authentication attempts'] = absorbing
 
     return basic
@@ -77,6 +77,7 @@ def timing(scen=1):
     T, pd, ba = prepare()
     # 2. modify the assignment, depending on the selected scenario
     ba = modify_assignment(ba, T, scen)
+    # print(ba)
     # 3. compute Pareto optimal values using evaluation on set semantics
     set_sem = T.set_semantics()
     pareto_optimal = pd.evaluateSS(T, ba, set_sem)
